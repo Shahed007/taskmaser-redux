@@ -5,6 +5,7 @@ import { addTask } from "../../redux/features/task/taskSlice";
 
 const AddTask = ({ isOpen, setIsOpen }) => {
   const { register, handleSubmit, reset } = useForm();
+  
   const dispatch = useDispatch();
 
   const onSubmit = (data) => {
